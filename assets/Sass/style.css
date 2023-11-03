@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #000222; }
+
+#main-image {
+  width: 75%;
+  height: 600px;
+  border: 1px black solid; }
+
+.btn {
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  font-family: "Calisto MT";
+  font-size: 17px;
+  margin: 10px 25px;
+  background-color: #43863DFF; }
+
+#title {
+  color: #fff;
+  font-family: Titr;
+  font-size: 50px; }
+
+/*# sourceMappingURL=style.css.map */
