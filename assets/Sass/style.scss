@@ -1,38 +1,37 @@
-$btncolor: #43863DFF;
-$text-color: #fff;
+$font-size: 45px;
+$botten-color: #212120;
+$botten-textcol: #d1d1cb;
 
-@mixin base($width-size,$height-size) {
-  width: $width-size;
-  height: $height-size;
+@mixin basestyle($widths,$hights,$sizefo,$col-btn,$marginsize) {
+  width: $widths;
+  height: $hights;
+  font-size: $sizefo;
+  color: $col-btn;
+  margin-left: $marginsize;
+  margin-top: $marginsize;
 }
 
-@mixin basecolor($color,$font-famil,$font-size) {
-  color: $color;
-  font-family: $font-famil;
+#titr {
   font-size: $font-size;
-}
-//--------------------------------------
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background-color: #000222;
+  margin-top: 40px;
+
 }
 
-#main-image {
-  @include base(75%, 600px);
-  border: 1px black solid;
+#reasult {
+  @extend #titr;
+}
+
+#input1 {
+  @include basestyle(300px, 50px, 30px, $botten-color, 18px);
+}
+#input2{
+  @extend #input1;
 }
 
 .btn {
-  @include base(100px, 50px);
-  @include basecolor($text-color, "Calisto MT", 17px);
-  margin: 10px 25px;
-  background-color: $btncolor;
-}
-
-#title {
-  @include basecolor($text-color, Titr, 40px);
-
-
+  @include basestyle(90px, 40px, 30px, #fff, 18px);
+  border: none;
+  border-radius: 50px;
+  background-color: #212120;
+  box-shadow: 2px 2px 5px #888888;
 }

@@ -6,19 +6,31 @@
     <link rel="stylesheet" href="assets/Sass/style.css">
     <link rel="icon" href="assets/img/js.svg">
 </head>
-<body>
+<body style="text-align: center ;">
+<h1 id="titr">Calculator</h1>
 
-<h1 id="title">سایت تمرین اول</h1>
 <div>
-    <img src="assets/img/Which-one.jpeg" id="main-image" title="تمرین تغییر عکس با کلیک" alt="ازدواج|طلاق">
 
+    <input type="number" required  id="input1" placeholder="Enter Number one...">
+    <input type="number" required  id="input2" placeholder="Enter Number two...">
 </div>
-<button class="btn" onclick="SetImage('assets/img/0_divorce.webp')">Divorce</button>
-<button class="btn" onclick="SetImage('assets/img/Wedding.jpg')"> Wedding</button>
-<script>
-    function SetImage(value) {
-        document.getElementById('main-image').src = value
-    }
+<div>
+    <input type="button" onclick="add()" class="btn" value="+">
+    <input type="button" onclick="tafrigh()" class="btn" value="-">
+    <input type="button" onclick="zarb()" class="btn" value="*">
+    <input type="button" onclick="taghsim()" class="btn" value="/">
+    <input type="button" onclick="taghsim()" class="btn" value="%">
+</div>
+<div>
+    <input type="button" onclick="mosavi_mosavi()" class="btn" value="==">
+    <input type="button" onclick="bozorgtar()" class="btn" value=">">
+    <input type="button" onclick="bozorgtar_mosavi()" class="btn" value=">=">
+    <input type="button" onclick="mosavi_mosavi_mosavi()" class="btn" value="===">
+    <input type="button" onclick="not_mosavi()" class="btn" value="!=">
+</div>
+<h2 id="reasult">12</h2>
+
+<script src="assets/jscript.js">
 </script>
 </body>
 </html>
